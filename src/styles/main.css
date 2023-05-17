@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --primary: #3B2F2F;
+    --secondary: #AD8762;
+    --third: #C0C0C0;
+    --white: #ffffff;
+    --black: #000000;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,50 +15,16 @@
 html{
     scroll-behavior: smooth;
 }
-:root{
-    --primary: #3B2F2F;
-    --secondary: #AD8762;
-    --third: #C0C0C0;
-    --white: #ffffff;
-}
-header{
-    background: var(--primary);
-    color: var(--secondary);
-    height: 75px;
-    display: flex;
-    position: sticky;
-    align-items: center;
-    padding-left: 21px;
-}
 footer{
     background: var(--primary);
     color: var(--secondary);
     display: flex;
-    position: absolute;
+    position: static;
     align-items: center;
     justify-content: center;
     bottom: 0;
+    height: 110px;
     width: 100%;
-    min-height: 125px;
-}
-ul{
-    list-style: none;
-}
-li{
-    display: inline;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: var(--secondary);
-}
-a, #navigation a{
-    text-decoration: none;
-    color: var(--secondary);
-}
-#navigation a:hover{
-    background-color: var(--third);
-    color: var(--primary);
-    border-radius: 5px;
-    border: 1px solid transparent;
 }
 #banner{
     display: block;
@@ -62,6 +35,12 @@ a, #navigation a{
     padding: 50px;
     line-height: 1.6rem;
     background: var(--third);
+    color: var(--primary);
+}
+.border-line {
+    border-bottom: solid 1px var(--black);
+    padding-bottom: 3px;
+    width: 100%;
 }
 #banner h3{
     font-size: 24px;
@@ -83,11 +62,11 @@ a, #navigation a{
 }
 .fa{
     padding: 10px;
-    font-size: 30px;
-    width: 35px;
-    height: 35px;
+    /* font-size: 40px; */
+    width: 50px;
+    height: 50px;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 4px;
     border-radius: 50%;
 }
 .fa:hover{
@@ -105,6 +84,55 @@ a, #navigation a{
     background: #161b22;
     color: white;
 }
+.projects{
+    justify-content: center;
+    display: flex;
+    height: 800px;
+    max-width: 30%;
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background-color: var(--third);
+}
+.grid-container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    height: 225px;
+    width: 225px;
+    text-align: center;
+    border-radius: 5px;
+}
+.grid-item h1{
+    color: var(--secondary);
+}
+
+.link{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.grid-item:nth-child(2),
+.grid-item:nth-child(3),
+.grid-item:nth-child(6) {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
 .carousel{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -114,7 +142,12 @@ a, #navigation a{
     background-color: var(--third);
     top: 75px;
     left: 25%;
+    color: var(--primary);
 }
+#carousel h2 {
+    color: var(--primary)
+}
+
 .text-container {
     display: block;
     text-align: center;

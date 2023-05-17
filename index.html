@@ -4,35 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Portfolio - Etusivu</title>
+    <title>Portfolio - FrontPage</title>
 </head>
 <body>
-    <header>
-        <h1>Etusivu</h1>
-        <nav id="navigation">
-            <ul id="header-ul">
-                <li>
-                    <a href="#about-me">tulossa</a>
-                </li>
-                <li>
-                    <a href="#">tulossa</a>
-                </li>
-                <li>
-                    <a href="./contacts.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <section>
         <div id="banner">
-            <h3>
-                Nimeni on Erik Ruotsalainen olen Tieto- ja viestintätekniikan osaaja erikoistun Web-ohjelmointiin.
-            </h3>
+            <div class="border-line">
+                <h3>
+                    My Portfolio
+                </h3>
+            </div>
             <p>
-                Olen 17-vuotias nuori aikuinen asun Vantaalta. Olen ystävällinen ja rehellinen ihminen
-                minuun on helppo tutustua ja tulen hyvin ryhmässä toimeen.
+                I am Web-developper from Finland.
             </p>
         </div>
         <container id="container">
@@ -40,15 +25,20 @@
                 <div class="text-container" id="about-me">
                     <h2>About me</h2>
                     <p>
-                        Olen kiinostunut ohjelmoinista ja mielelläni opin uusia asioita. 
-                        Olen Syntynyt kolmaskymmenes Joulukuuta 2004. Kielitaitoni on kohtalainen.
+                        I am 18 years old Male from Vantaa, Finland. I started Programming 2020 when i started studying at Business College Helsinki.
+                        I am interested at getting better in Programming.
                     </p>
                 </div>
-                <div class="text-container" id="tulevaisuus">
-                    <h2>Tulevaisuus</h2>
+                <div class="text-container" id="education">
+                    <h2>Education</h2>
                     <p>
-                        Tulevaisuudessa haluan tulla paremaksi ohjelmoijaksi ja tulla paremmaksi ihmiseksi.
-                        Viiden vuoden päästä toivon että minulla on vakaa työpaikka ja vakaa palkka.
+                        I graduated from Helsinki Business College with a degree in Information and Communication Technology. I specialized in Web Development.
+                    </p>
+                </div>
+                <div class="text-container" id="programming">
+                    <h2>programming languages & librarys</h2>
+                    <p>
+                        I know JavaScript, TypeScript, React, React Native, Node.js, express, HTML, CSS, SQL.
                     </p>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -56,22 +46,48 @@
                 <div class="dot-container">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+
                 </div>
             </div>
+        </container>
+        <container class="projects">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h1>Better input extension</h1>
+                    <a class="link" href="https://github.com/Supr0en/Better-Input-extension" target="_blank">To Project</a>
+                </div>
+                <div class="grid-item">
+                    <P>Chrome extension that lets you add character around text like Visual Studio Code.</P>
+                </div>
+                <div class="grid-item">
+                    <P>Full Stack open course is University of Helsinki and Houston Inc open modern Web development course. I have made most of the full stack open course at Internship as practice.</P>
+                </div>
+                <div class="grid-item">
+                    <h1>Full Stack Open course</h1>
+                    <a class="link" href="" target="_blank">To project</a>
+                </div>
+                <div class="grid-item">
+                    <h1>webhook-executor</h1>
+                    <a class="link" href="https://www.npmjs.com/package/@komuhomes/webhook-executor" target="_blank">To project</a>
+                </div>
+                <div class="grid-item">
+                    <p>Webhook-executor was a project that me and my friend created at internship.</p>
+                </div>
+              </div>
         </container>
     </section>
     <footer>
         <div id="contact">
             <p>Email - erik.ruotsalainen1@gmail.com</p>
-            <p>Puh - +358 45 6071500</p>
-            <p>Copyright &copy; Portfolio Erik Ruotsalainen 2022</p>
+            <p>Copyright &copy; Portfolio Erik Ruotsalainen 2023</p>
             <div id="multimedias">
-                <a href="https://www.linkedin.com/in/erik-ruotsalainen-005a41236/" class="fa fa-linkedin"></a>
-                <a href="https://twitter.com/Supr0en" class="fa fa-twitter"></a>
-                <a href="https://github.com/Supr0en" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/erikruotsalainen/" class="fa fa-linkedin fa-2x"></a>
+                <a href="https://twitter.com/Supr0en" class="fa fa-twitter fa-2x"></a>
+                <a href="https://github.com/Supr0en" class="fa fa-github fa-2x"></a>
             </div>
         </div>
     </footer>
-    <script src="../javascript/slideshow.js"></script>
+    <script src="./src/javascript/slideshow.js"></script>
 </body>
 </html>
