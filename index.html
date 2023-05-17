@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="FI">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio - Etusivu</title>
+</head>
+<body>
+    <header>
+        <h1>Etusivu</h1>
+        <nav id="navigation">
+            <ul id="header-ul">
+                <li>
+                    <a href="#about-me">tulossa</a>
+                </li>
+                <li>
+                    <a href="#">tulossa</a>
+                </li>
+                <li>
+                    <a href="./contacts.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="banner">
+            <h3>
+                Nimeni on Erik Ruotsalainen olen Tieto- ja viestintätekniikan osaaja erikoistun Web-ohjelmointiin.
+            </h3>
+            <p>
+                Olen 17-vuotias nuori aikuinen asun Vantaalta. Olen ystävällinen ja rehellinen ihminen
+                minuun on helppo tutustua ja tulen hyvin ryhmässä toimeen.
+            </p>
+        </div>
+        <container id="container">
+            <div class="carousel">
+                <div class="text-container" id="about-me">
+                    <h2>About me</h2>
+                    <p>
+                        Olen kiinostunut ohjelmoinista ja mielelläni opin uusia asioita. 
+                        Olen Syntynyt kolmaskymmenes Joulukuuta 2004. Kielitaitoni on kohtalainen.
+                    </p>
+                </div>
+                <div class="text-container" id="tulevaisuus">
+                    <h2>Tulevaisuus</h2>
+                    <p>
+                        Tulevaisuudessa haluan tulla paremaksi ohjelmoijaksi ja tulla paremmaksi ihmiseksi.
+                        Viiden vuoden päästä toivon että minulla on vakaa työpaikka ja vakaa palkka.
+                    </p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </container>
+    </section>
+    <footer>
+        <div id="contact">
+            <p>Email - erik.ruotsalainen1@gmail.com</p>
+            <p>Puh - +358 45 6071500</p>
+            <p>Copyright &copy; Portfolio Erik Ruotsalainen 2022</p>
+            <div id="multimedias">
+                <a href="https://www.linkedin.com/in/erik-ruotsalainen-005a41236/" class="fa fa-linkedin"></a>
+                <a href="https://twitter.com/Supr0en" class="fa fa-twitter"></a>
+                <a href="https://github.com/Supr0en" class="fa fa-github"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../javascript/slideshow.js"></script>
+</body>
+</html>
