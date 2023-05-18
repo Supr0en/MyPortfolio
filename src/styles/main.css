@@ -193,10 +193,10 @@ footer{
         height: 1500px;
         padding-top: 10px;
         min-height: 100%;
-        min-width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-top: 30%;
+        min-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
     }
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
@@ -243,10 +243,52 @@ footer{
         height: 1500px;
         padding-top: 10px;
         min-height: 100%;
-        min-width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
+        min-width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
         margin-top: 30%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5px;
+    }
+    .grid-item{
+        width: 300px;
+    }
+    .grid-item:nth-child(1) {
+        order: 1;
+    }
+      
+    .grid-item:nth-child(2) {
+        order: 2;
+    }
+      
+    .grid-item:nth-child(3) {
+        order: 4;
+    }
+      
+    .grid-item:nth-child(4) {
+        order: 3;
+    }
+      
+    .grid-item:nth-child(5) {
+        order: 5;
+    }
+      
+    .grid-item:nth-child(6) {
+        order: 6;
+    }
+}
+@media (min-width: 991px) and (max-width: 1669px) {
+    .projects {
+        height: 1500px;
+        padding-top: 10px;
+        min-height: 100%;
+        min-width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 10%;
     }
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
