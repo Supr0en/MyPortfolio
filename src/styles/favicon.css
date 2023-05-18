@@ -43,3 +43,6 @@
     color: var(--black);
     box-shadow: inset 0 0 10px rgba(59, 47, 47, 0.7);
 }
+.fa-coffee {
+    color: var(--primary)
+}

@@ -33,7 +33,7 @@ footer{
     align-items: center;
     min-height: 25%;
     min-width: 100%;
-    padding: 50px;
+    padding: 30px;
     line-height: 1.6rem;
     background: var(--third);
     color: var(--primary);
@@ -177,7 +177,7 @@ footer{
     background-color: #717171;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .carousel {
         min-width: 80%;
         margin-left: 10%;
@@ -225,5 +225,58 @@ footer{
       
     .grid-item:nth-child(6) {
         order: 6; /* Change the order of item 6 */
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel {
+        min-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .text-container{
+        padding: 10%;
+        padding-top: 10%;
+        min-width: 100%;
+        align-items: center;
+    }
+    .projects {
+        height: 1500px;
+        padding-top: 10px;
+        min-height: 100%;
+        min-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 30%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5px;
+    }
+    .grid-item{
+        width: 300px;
+    }
+    .grid-item:nth-child(1) {
+        order: 1;
+    }
+      
+    .grid-item:nth-child(2) {
+        order: 2;
+    }
+      
+    .grid-item:nth-child(3) {
+        order: 4;
+    }
+      
+    .grid-item:nth-child(4) {
+        order: 3;
+    }
+      
+    .grid-item:nth-child(5) {
+        order: 5;
+    }
+      
+    .grid-item:nth-child(6) {
+        order: 6;
     }
 }
