@@ -7,7 +7,6 @@
 }
 .fa{
     padding: 10px;
-    /* font-size: 40px; */
     width: 50px;
     height: 50px;
     text-decoration: none;
@@ -31,4 +30,16 @@
 }
 .fa-angle-double-left {
     color: var(--secondary);
+}
+.fa-angle-double-left:hover{
+    padding-top: 5px;
+    padding-left: 12px;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    margin: 5px 4px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    color: var(--black);
+    box-shadow: inset 0 0 10px rgba(59, 47, 47, 0.7);
 }

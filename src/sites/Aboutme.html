@@ -4,32 +4,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/favicon.css">
-    <link rel="stylesheet" href="./src/styles/scrollbar.css">
+    <link rel="stylesheet" href="../styles/scrollbar.css">
     <link rel="stylesheet" href="../styles/more.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio - About me</title>
 </head>
 <body>
-    <a onclick="history.back()" class="fa fa-angle-double-left fa-2x"></a>
+    <div style="height: 50px; width: 50px;">
+        <a onclick="history.back()" class="fa fa-angle-double-left fa-2x"></a>
+    </div>
     <section>
-        <container id="AboutMe">
-            <h1>About Me</h1>
-            <p>I am 18</p>
+        <container id="AboutMe" class="Aboutme-bubble">
+            <div style="margin-top: 50px;" class="content">
+                <h1>About Me</h1>
+                <div class="text">
+                    <p">
+                        My name is Erik Ruotsalainen and I am a full stack developper. I have lived 15-years in Otalampi, Vihti where i was in primary school, 
+                        we moved with family to Hämeenkylä, Vantaa in 2020.
+                    </p>
+                    <hr>
+                    <p>
+                        <h3>family and hobbys</h3>
+                        I have to sibling both are older than me so i have been always trying best me to follow them. 
+                        I have played volleyball six years before stopped to focus more on school.
+                    </p>
+                    <p>
+                        <h3>My Passion</h3>
+                        I am lover for coffee, i like to learn more about coding and programming by watching new things from youtube and after
+                        maiking something new info i have got.
+                    </p>
+                </div>
+            </div>
         </container>
-        <container id="Skills"">
-            <h1>My Skills</h1>
-            <div class="languages" id="languages"></div>
+        <container id="Skills" class="skill-bubble">
+            <div class="content">
+                <h1>My Skills</h1>
+                <div class="languages" id="languages"></div>
+                <div class="text">
+                    <p>I have still a lot to learn about full stack development like Cloud services (AWS, GCP).</p>
+                </div>
+            </div>
         </container>
     </section>
     <footer>
         <div id="contact">
-            <p>Email - erik.ruotsalainen1@gmail.com</p>
-            <p>Copyright &copy; Portfolio Erik Ruotsalainen 2023</p>
             <div id="multimedias">
                 <a href="https://www.linkedin.com/in/erikruotsalainen/" class="fa fa-linkedin fa-2x"></a>
                 <a href="https://twitter.com/Supr0en" class="fa fa-twitter fa-2x"></a>
                 <a href="https://github.com/Supr0en" class="fa fa-github fa-2x"></a>
             </div>
+            <p>Email - erik.ruotsalainen1@gmail.com</p>
+            <p>Copyright &copy; Portfolio Erik Ruotsalainen 2023</p>
         </div>
     </footer>
     <script src="../javascript/skills.js"></script>
