@@ -15,26 +15,28 @@
 html{
     scroll-behavior: smooth;
 }
-footer{
+
+footer {
     background: var(--primary);
     color: var(--secondary);
     display: flex;
-    position: static;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     bottom: 0;
     height: 110px;
-    width: 100%;
+    min-width: 100%;
     white-space: nowrap;
 }
+
 #banner{
     display: block;
     justify-content: center;
     align-items: center;
     min-height: 25%;
     min-width: 100%;
-    padding: 30px;
-    line-height: 1.6rem;
+    padding: 25px;
     background: var(--third);
     color: var(--primary);
     white-space: nowrap;
@@ -52,7 +54,11 @@ footer{
     max-width: 45%;
 }
 #contact{
-    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
 }
 #contact p{
     font-size: 13px;
@@ -178,20 +184,28 @@ footer{
 }
 
 @media (max-width: 767px) {
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    container {
+        max-width: 100%;
+    }
     .carousel {
         min-width: 80%;
         margin-left: 10%;
         margin-right: 10%;
     }
     .text-container{
-        padding: 10%;
+        padding: 15%;
         padding-top: 10%;
         min-width: 100%;
         align-items: center;
     }
     .projects {
         height: 1500px;
-        padding-top: 10px;
+        padding: 10px;
         min-height: 100%;
         min-width: 80%;
         margin-left: 10%;
@@ -280,7 +294,7 @@ footer{
         order: 6;
     }
 }
-@media (min-width: 991px) and (max-width: 1669px) {
+@media (min-width: 992px) and (max-width: 1669px) {
     .projects {
         height: 1500px;
         padding-top: 10px;
