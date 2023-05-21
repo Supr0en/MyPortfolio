@@ -8,39 +8,38 @@
     <link rel="stylesheet" href="./styles/scrollbar.css">
     <link rel="stylesheet" href="./styles/favicon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="../dist/output.css" rel="stylesheet">
     <title>Portfolio - Frontpage</title>
 </head>
 <body>
     <section>
-        <div class="block justify-center align-center min-h-1/4 min-w-full bg-third p-6 whitespace-nowrap">
-            <div class="border-b-2 border-black">
-                <h3 class="text-2xl font-bold">
-                    <a class="no-underline" href="./More/Question.html">My Portfolio</a>
+        <div id="banner">
+            <div class="border-line">
+                <h3>
+                    <a id="Question" href="./More/Question.html">My Portfolio</a>
                 </h3>
             </div>
-            <p class="max-w-">
+            <p>
                 I am Web Developer from Finland.
             </p>
         </div>
         <container id="container">
             <div class="carousel">
                 <div class="text-container" id="about-me">
-                    <h2 class="text-2xl font-bold">Who am i</h2>
+                    <h2>Who am i</h2>
                     <p>
                         I am 18 years old Male from Vantaa, Finland. I started Programming 2020 when i started studying at Business College Helsinki.
                     </p>
                 </div>
                 <div class="text-container" id="education">
-                    <h2 class="text-2xl font-bold">Education</h2>
+                    <h2>Education</h2>
                     <p>
                         I have graduated from Helsinki Business College with a degree in Information and Communication Technology. I specialized in Web Development.
                     </p>
                 </div>
                 <div class="text-container" id="skills">
-                    <h2 class="text-2xl font-bold">My Skills</h2>
+                    <h2>My Skills</h2>
                     <p>
-                        Programming languages & libraries i have used: JavaScript, TypeScript, React/React Native, NodeJs, express, HTML, CSS, MySQL.
+                        Programming languages & libraries i have used: JavaScript, TypeScript, React/React Native, NodeJs, express, HTML, CSS, SQL.
                     </p>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -56,7 +55,7 @@
         <container class="projects">
             <div class="grid-container">
                 <div class="grid-item">
-                    <h1 class="text-2xl font-bold">Better input extension</h1>
+                    <h1>Better input extension</h1>
                     <a class="link" href="https://github.com/Supr0en/Better-Input-extension" target="_blank">Source Code</a>
                 </div>
                 <div class="grid-item">
@@ -66,11 +65,11 @@
                     <P>Full Stack open course is University of Helsinki and Houston Inc open modern Web development course. I have made most of the full stack open course at Internship as practice.</P>
                 </div>
                 <div class="grid-item">
-                    <h1 class="text-2xl font-bold">Full Stack Open course</h1>
+                    <h1>Full Stack Open course</h1>
                     <a class="link" href="" target="_blank">Source Code</a>
                 </div>
                 <div class="grid-item">
-                    <h1 class="text-2xl font-bold">webhook-executor</h1>
+                    <h1>webhook-executor</h1>
                     <a class="link" href="https://www.npmjs.com/package/@komuhomes/webhook-executor" target="_blank">Source Code</a>
                 </div>
                 <div class="grid-item">
@@ -79,15 +78,15 @@
               </div>
         </container>
     </section>
-    <footer class="bg-primary text-primary flex flex-col text-center align-center justify-center bottom-0 h-28 min-w-full whitespace-nowrap">
-        <div class="flex flex-col align-center justify-center max-w-1/2 text-secondary">
-            <div class="flex justify-center align-center">
+    <footer>
+        <div id="contact">
+            <div id="multimedias">
                 <a href="https://www.linkedin.com/in/erikruotsalainen/" class="fa fa-linkedin fa-2x"></a>
                 <a href="https://twitter.com/Supr0en" class="fa fa-twitter fa-2x"></a>
                 <a href="https://github.com/Supr0en" class="fa fa-github fa-2x"></a>
             </div>
-            <p class="font-xs">Email - erik.ruotsalainen1@gmail.com</p>
-            <p class="font-xs">Copyright &copy; Portfolio Erik Ruotsalainen 2023</p>
+            <p>Email - erik.ruotsalainen1@gmail.com</p>
+            <p>Copyright &copy; Portfolio Erik Ruotsalainen 2023</p>
         </div>
     </footer>
     <script src="./javascript/slideshow.js"></script>
