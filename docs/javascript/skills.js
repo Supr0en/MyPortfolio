@@ -1,4 +1,4 @@
-const skills = [ 'JavaScript', 'TypeScript', 'React', 'React Native', 'NodeJs', 'express', 'HTML', 'CSS', 'SQL' ];
+const skills = [ 'JavaScript', 'TypeScript', 'React', 'React Native', 'NodeJs', 'express', 'HTML', 'CSS', 'Tailwind' ,'MySQL' ];
 
 var outputElement = document.getElementById('languages');
 

@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="../styles/more.css">
     <title>Question</title>
 </head>
-<body class="question">
-    <div style="display: felx; align-items: center; justify-content: center;">
-        <h3>
+<body style="background-color: #3B2F2F; color: #AD8762;">
+    <div class="Question">
+        <h3 id="question" style="text-align: center;">
             If you were in a situation where you could sell the project you've been working on for $2.5 trillion and follow Marcus "Notch" Persson's lead
             (without knowing what would happen to your project) or do something else? What would you do?
         </h3>
     </div>
+    <script>
+        setTimeout(function() {
+            var textElement = document.getElementById("question");
+            textElement.textContent = "If i would be answering this question, I would choice to do something else.";
+        }, 20000);
+    </script>
 </body>
 </html>

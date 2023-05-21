@@ -104,17 +104,6 @@ footer {
 .grid-item h1{
     color: var(--secondary);
 }
-#Question {
-    text-decoration: none;
-    color: var(--black);
-}
-.question {
-    background-color: var(--primary);
-    color: var(--secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .link{
     color: var(--secondary);
     text-decoration: none;
