@@ -60,6 +60,7 @@ container {
     height: 400px;
     width: 25%;
     margin-right: 100px;
+    margin-left: 100px;
 }
 img {
     height: 112px;
@@ -143,12 +144,12 @@ img {
     display: inline-block;
     align-items: center;
     justify-content: center;
+    position: relative;
     background-color: var(--secondary);
     height: 500px;
     width: 500px;
     border-radius: 50%;
     box-shadow: inset 0 0 10px rgba(59, 47, 47, 1);
-    margin-right: 100px;
 }
 
 #contact{
